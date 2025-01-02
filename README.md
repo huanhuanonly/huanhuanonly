@@ -3,10 +3,11 @@
 👋 [huanhuanonly](https://codeforces.com/profile/huanhuanonly)'s :thought_balloon: :bulb: :balloon: 🤔
 ---
 
+![GitHub-Star](https://github-readme-stats.vercel.app/api?username=huanhuanonly&show_icons=true&theme=tokyonight)
 ![Streak-Stats](https://streak-stats.demolab.com?user=huanhuanonly&theme=tokyonight)
 
+![Trophy](https://github-profile-trophy.vercel.app/?username=huanhuanonly&column=4&margin-w=20&margin-h=65&theme=tokyonight)
 ![Top-Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=huanhuanonly&theme=tokyonight&hide=javascript,html)
-![GitHub-Star](https://github-readme-stats.vercel.app/api?username=huanhuanonly&show_icons=true&theme=tokyonight)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/huanhuanonly/huanhuanonly/output/github-contribution-grid-snake-dark.svg">
