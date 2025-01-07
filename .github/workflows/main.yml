@@ -1,17 +1,17 @@
 name: generate animation SNK
 
 on:
-  # run automatically every 6 hours
+  # run automatically every 6 hours: 0 */6 * * *
   schedule:
-    - cron: "0 */6 * * *" 
+    - cron: "0 10,17,22 * * *" 
   
   # allows to manually run the job at any time
   workflow_dispatch:
   
-  # run on every push on the master branch
+  # run on every push on the main branch
   push:
     branches:
-    - master
+    - main
 
 jobs:
   generate:
@@ -19,14 +19,22 @@ jobs:
     timeout-minutes: 10
 
     steps:
-     # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: fetch images
+        run: |
+          mkdir images
+          curl https://github-readme-stats.vercel.app/api?username=huanhuanonly&show_icons=true&theme=tokyonight > github-stats.svg
+          curl https://github-profile-trophy.vercel.app/?username=huanhuanonly&column=4&margin-w=20&margin-h=65&theme=tokyonight > github-trophy.svg
+          curl https://github-readme-stats.vercel.app/api/top-langs/?username=huanhuanonly&theme=tokyonight > github-toplangs.svg
+          curl https://streak-stats.demolab.com?user=huanhuanonly&theme=tokyonight&border_radius=30&card_width=800 > github-streak.svg
+      
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            images/github-contribution-grid-snake.svg
+            images/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
@@ -37,6 +45,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: images
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
