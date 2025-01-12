@@ -3,7 +3,7 @@ name: generate animation SNK
 on:
   # run automatically every 6 hours: 0 */6 * * *
   schedule:
-    - cron: "0 10,17,22 * * *" 
+    - cron: "0 0 * * *" 
   
   # allows to manually run the job at any time
   workflow_dispatch:
