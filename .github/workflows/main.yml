@@ -22,9 +22,6 @@ jobs:
       - name: fetch images
         run: |
           mkdir images
-          curl 'https://github-readme-stats.vercel.app/api?username=huanhuanonly&show_icons=true&theme=tokyonight' > images/github-stats.svg
-          curl 'https://github-profile-trophy.vercel.app/?username=huanhuanonly&column=4&margin-w=20&margin-h=65&theme=tokyonight' > images/github-trophy.svg
-          curl 'https://github-readme-stats.vercel.app/api/top-langs/?username=huanhuanonly&theme=tokyonight' > images/github-toplangs.svg
           curl 'https://streak-stats.demolab.com?user=huanhuanonly&theme=tokyonight&border_radius=30&card_width=800' > images/github-streak.svg
       
       # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
