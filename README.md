@@ -1,12 +1,7 @@
 <div align="center">
 
-👋 [huanhuanonly](https://codeforces.com/profile/huanhuanonly)'s :thought_balloon: :bulb: :balloon: 🤔
+👋 [huanhuanonly](https://clist.by/coder/huanhuanonly/)'s :thought_balloon: :bulb: :balloon: 🤔
 ---
-
-<picture><img alt="github-stats" src="https://raw.githubusercontent.com/huanhuanonly/huanhuanonly/output/github-stats.svg"/></picture>
-
-<picture><img alt="github-trophy" src="https://raw.githubusercontent.com/huanhuanonly/huanhuanonly/output/github-trophy.svg"/></picture>
-<picture><img alt="github-toplangs" src="https://raw.githubusercontent.com/huanhuanonly/huanhuanonly/output/github-toplangs.svg"/></picture>
 
 <picture><img alt="github-streak" src="https://raw.githubusercontent.com/huanhuanonly/huanhuanonly/output/github-streak.svg"/></picture>
 
